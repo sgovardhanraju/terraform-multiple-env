@@ -1,50 +1,52 @@
-variable "project" {
-  default = "roboshop"
+
+variable "project"{
+    default = "roboshop"
 }
+
 variable "environment" {
-  type = map
-  default = {
-      dev = "dev"
-      prod = "prod"
-  }
-  
+    type = map
+    default = {
+        dev = "dev"
+        prod = "prod"
+    }
 }
+
 variable "ami_id" {
- default = "ami-09c813fb71547fc4f"
+    type = string
+    default     = "ami-09c813fb71547fc4f"
 }
 
 variable "instance_type" {
-  type = map
-  default = {
-    dev = "t3.micro"
-    prod = "t3.small"
-  }
+    type = map
+    default = {
+        dev = "t3.micro"
+        prod = "t3.small"
+    }
 }
 
+
 variable "cidr" {
-  type = list
-  default = ["0.0.0.0/0"]
+    type = list
+    default = ["0.0.0.0/0"]
 }
 
 variable "ingress_from_port" {
-  default = 0
+    default = 0
 }
 
 variable "ingress_to_port" {
-  default = 0
+    default = 0
 }
 
 variable "egress_from_port" {
-  default = 0
+    default = 0
 }
 
 variable "egress_to_port" {
-  default = 0
+    default = 0
 }
 
-variable "ingress_protocl" {
-  default = "-1"
-}
-variable "egress_protocol" {
-  default = "-1"
+variable "protocol" {
+    type = string
+    default = "-1"
 }
