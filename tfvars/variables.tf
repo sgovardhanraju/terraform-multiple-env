@@ -1,0 +1,42 @@
+variable "project" {
+  default = "roboshop"
+}
+variable "environmet" {
+  type = string
+  
+}
+variable "ami_id" {
+ default = "ami-09c813fb71547fc4f"
+}
+
+variable "instance_type" {
+  type = string
+}
+
+variable "cidr" {
+  type = list
+  default = ["0.0.0.0/0"]
+}
+
+variable "ingress_from_port" {
+  default = 0
+}
+
+variable "ingress_to_port" {
+  default = 0
+}
+
+variable "egress_from_port" {
+  default = 0
+}
+
+variable "egress_to_port" {
+  default = 0
+}
+
+variable "ingress_protocl" {
+  default = "-1"
+}
+variable "egress_protocol" {
+  default = "-1"
+}
