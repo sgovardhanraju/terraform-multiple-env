@@ -1,2 +1,2 @@
 environment = "dev"
-instace_type = "t3.micro"
+instance_type = "t3.micro"
