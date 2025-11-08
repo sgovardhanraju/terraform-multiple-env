@@ -1,2 +1,2 @@
 environment = "prod"
-instace_type = "t3.medium"
+instance_type = "t3.medium"
